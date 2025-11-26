@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+.titulo-it {
+    
+    color: white;
+}
+.par-olhos {
+    display: flex; /* deixa os dois olhos na mesma linha */
+    gap: 2vw; /* distancia dos olhos */
+}
+.olho {
+    animation: brilho 3s ease infinite; /* animcao do brilho dos olhos que acontece infinitamente */
+    color: white;
+    font-size: 10vw;
+}
+@keyframes brilho {
+    0% { /* inicio da animacao (brilho maximo nos olhos) */
+        text-shadow: 0px 0px 15px white;
+    }
+    50% { /* meio da animacao (brilho fraco dos olhos) */
+        text-shadow: 0px 0px 1px white;
+        opacity: .7;
+    }
+    100% { /* fim da animacao (brilho forte dos olhos) */
+        text-shadow: 0px 0px 13px white;
+    }
+}
+.palhaco {
+    display: flex; /* deixa o balao e os olhos na mesma linha */
+    align-items: center; /* centraliza horizontalmente o balao e os olhos na linha que eles tao */
+    justify-self: right;
+    margin-right: 10vw;
+}
+.balao img{
+    width: auto;
+    height: 40vh;
+    position: relative; /* permite que a imagem do balao se mova livremente */
+    animation: subirDescer 3.5s ease-in-out infinite; /* animacao do balao com 3 segundos de duracao e acontece infinitamente */
+}
+
+@keyframes subirDescer {
+    0% { /* posicao original */
+        transform: translateY(0);
+    }
+    50% { /* sobe */
+        transform: translateY(-3vh); 
+    }
+    100% { /* volta */
+        transform: translateY(0); 
+    }
+}
