@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(19, 19, 19);
+    min-height: 100vh;
+    overflow: hidden;
+}
+hr {
+    border: 1px solid red;
+    margin-top: -.1%;
+    position: relative;
+}
+.baloes span {
+    position: fixed;
+    bottom: -50px;
+    font-size: 35px;
+    animation: subirbalao 8s linear infinite;
+    opacity: 0.9;
+}
+.baloes span:nth-child(1) {
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+.baloes span:nth-child(2) {
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+.baloes span:nth-child(3) {
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+.baloes span:nth-child(4) {
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+.baloes span:nth-child(5) {
+    animation-duration: 11s;
+    animation-delay: 4s;
+}
+.baloes span:nth-child(6) {
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+.baloes span:nth-child(7) {
+    animation-duration: 12s;
+    animation-delay: 1s;
+}
+.baloes span:nth-child(8) {
+    animation-duration: 7.5s;
+    animation-delay: 3s;
+}
+.baloes span:nth-child(9) {
+    animation-duration: 9.5s;
+    animation-delay: 0.5s;
+}
+.baloes span:nth-child(10) {
+    animation-duration: 8.5s;
+    animation-delay: 4s;
+}
+
+@keyframes subirbalao {
+    0% {
+        transform: translateY(0) scale(0.9);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 3%;
+    width: 95%;
+    margin-top: .8%;
+    margin-bottom: .3%;
+}
+
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 50vh;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+a img {
+    width: auto;
+    height: 50vh;
+    transition: 0.5s ease;
+}
+
+.home {
+    position: relative;
+    left: -37%;
+    transition: 0.5s ease;
+}
+.home:hover {
+    transform: scale(1.1);
+}
+.pennywise {
+    position: relative;
+}
+.pennywise::before {
+    content: "";
+    transition: opacity .3s ease;
+}
+.pennywise::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: -20%;
+    aspect-ratio: 1/1;
+    width: 70vh;
+    height: auto;
+    background-image: url("imagens/halloween.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .3s ease;
+}
+.pennywise:hover::before {
+    opacity: 0;
+}
+.pennywise:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.autor {
+    position: relative;
+}
+.autor::before {
+    content: "";
+    transition: opacity .3s ease;
+}
+.autor::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: -20%;
+    aspect-ratio: 1/1;
+    width: 70vh;
+    height: auto;
+    background-image: url("imagens/writer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .3s ease;
+}
+.autor:hover::before {
+    opacity: 0;
+}
+.autor:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.personagens {
+    position: relative;
+}
+.personagens::before {
+    content: "";
+    transition: opacity .3s ease;
+}
+.personagens::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: -20%;
+    aspect-ratio: 1/1;
+    width: 70vh;
+    height: auto;
+    background-image: url("imagens/team.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .3s ease;
+}
+.personagens:hover::before {
+    opacity: 0;
+}
+.personagens:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.obras {
+    position: relative;
+}
+.obras::before {
+    content: "";
+    transition: opacity .3s ease;
+}
+.obras::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: -20%;
+    aspect-ratio: 1/1;
+    width: 70vh;
+    height: auto;
+    background-image: url("imagens/episode.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .3s ease;
+}
+.obras:hover::before {
+    opacity: 0;
+}
+.obras:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.premi {
+    position: relative;
+}
+.premi::before {
+    content: "";
+    transition: opacity .3s ease;
+}
+.premi::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: -20%;
+    aspect-ratio: 1/1;
+    width: 70vh;
+    height: auto;
+    background-image: url("imagens/trophy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .3s ease;
+}
+.premi:hover::before {
+    opacity: 0;
+}
+.premi:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.denuncia {
+    position: relative;
+}
+.denuncia::before {
+    content: "";
+    transition: opacity .3s ease;
+}
+.denuncia::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: -20%;
+    aspect-ratio: 1/1;
+    width: 70vh;
+    height: auto;
+    background-image: url("imagens/warning.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .3s ease;
+}
+.denuncia:hover::before {
+    opacity: 0;
+}
+.denuncia:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+

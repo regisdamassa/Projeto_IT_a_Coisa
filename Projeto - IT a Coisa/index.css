@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('imagens/background-pennywise.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    overflow: hidden;
+}
+
+button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(150, 22, 22);
+    border-radius: 10px;
+    border: none;
+    padding: 1vh;
+    width: 15vw;
+    height: auto;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s ease;
+    left: 25%;
+    position: relative;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(116, 0, 0);
+}
+
+button:active {
+    background-color: black;
+}
+
+.sub {
+    font-family: 'Creepster', cursive;
+    color: white;
+    font-size: 7vh;
+    margin-top: -5%;
+    left: 12%;
+    position: relative;
+    text-shadow: 0 0 10px white;
+    opacity: 0;
+    letter-spacing: 3px;
+    margin-left: 2%;
+    animation: aparecer 2s ease forwards, pisca 3s infinite;
+
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pisca {
+    0%   { opacity: 1; }
+    5%   { opacity: .4; }
+    7%   { opacity: 1; }
+    10%  { opacity: .1; }
+    11%  { opacity: 1; }
+
+    /* fica normal vários segundos */
+    70%  { opacity: 1; }
+
+    /* segunda falha rápida */
+    72%  { opacity: .3; }
+    74%  { opacity: 1; }
+    76%  { opacity: .2; }
+    78%  { opacity: 1; }
+
+    /* volta ao normal */
+    100% { opacity: 1; }
+}
+
+.it-png img {
+    width: auto;
+    height: 80vh;
+    left: -3%;
+    position: relative;
+
+}
