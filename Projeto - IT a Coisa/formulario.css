@@ -1,0 +1,204 @@
+/* ---------- ESTILO GERAL ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #141414, #2c2c2c 3%, #333333);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    padding-bottom: 5vh;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+
+fieldset {
+    border: none;
+    border-radius: 12px;
+    padding: 4vh 5vh;
+    background: #1c1c1c;
+    box-shadow: 7px 7px 12px #0e0e0e, -5px -5px 10px #3d3d3d;
+    width: 70%;
+}
+
+h1 {
+    text-shadow: 3px 3px 5px #141414;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+
+label {
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px #0f0f0f;
+}
+
+.n input,
+.n select,
+textarea {
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 7px;
+    padding: .5vw;
+    box-shadow: 3px 3px 5px #141414;
+    transition: .5s ease;
+    outline: none;
+}
+select, textarea {
+    margin-bottom: 3%;
+}
+
+.n input {
+    width: 12vw;
+}
+
+#nome,
+#email {
+    width: 18vw;
+}
+
+#cidade,
+#motivo {
+    width: 14vw;
+}
+
+#medo {
+    width: 12vw;
+}
+
+#data_nasc {
+    width: 7.3vw;
+}
+
+#cep {
+    width: 6vw;
+}
+
+#telefone {
+    width: 9vw;
+}
+
+textarea {
+    width: 25vw;
+    height: 10vh;
+    resize: none;
+    background-color: #4b4b4b;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #9b9b9b;
+}
+
+
+.n input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(99, 99, 99);
+    transform: scale(1.02);
+}
+
+
+.n input:invalid:not(:focus):not(:placeholder-shown),
+textarea:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid red;
+    animation: tremer .5s ease;
+}
+
+@keyframes tremer {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-4px);
+    }
+
+    60% {
+        transform: translateX(4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.n input:valid:not(:focus):not(:placeholder-shown),
+textarea:valid:not(:focus):not(:placeholder-shown),
+select:valid {
+    border: 2px solid lightgreen;
+}
+
+
+hr {
+    border: 2px solid #393939;
+    border-radius: 4px;
+    width: 80%;
+    margin: 3vh auto;
+    box-shadow:
+        2px 2px 4px #0f0f0f,
+        -2px -2px 4px rgb(68, 68, 68);
+}
+
+
+button {
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border: none;
+    border-radius: 12px;
+    padding: 2vh;
+    width: 40%;
+    margin: 2vh auto;
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 3px 5px #141414;
+    box-shadow: 3px 3px 7px #0f0f0f;
+    transition: .4s;
+}
+
+form:valid button:hover {
+    cursor: pointer;
+    background-color: rgb(88, 88, 88);
+    transform: scale(1.03);
+}
+
+form:invalid button:hover {
+    cursor: not-allowed;
+    animation: tremer2 .5s ease infinite;
+}
+
+@keyframes tremer2 {
+    0% {
+        transform: translateX(0);
+        border: 2px solid red;
+    }
+
+    33% {
+        transform: translateX(-4px);
+        border: 2px solid red;
+    }
+
+    66% {
+        transform: translateX(4px);
+        border: 2px solid red;
+    }
+
+    100% {
+        transform: translateX(0);
+        border: 2px solid red;
+    }
+}

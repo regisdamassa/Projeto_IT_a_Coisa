@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube dos Otários – Cadastro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <form action="">
+        <fieldset>
+            <h1>Cadastro – Clube dos Otários</h1>
+
+            <div class="info">
+
+                <div class="n">
+                    <label for="nome">Nome completo</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+                </div>
+
+                <div class="n">
+                    <label for="idade">Idade</label><br>
+                    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required><br>
+                </div>
+
+                <div class="n">
+                    <label for="cidade">Cidade onde mora</label><br>
+                    <input type="text" id="cidade" name="cidade" placeholder="Ex: Derry" required><br>
+                </div>
+
+                <div class="n">
+                    <label for="medo">Seu maior medo</label><br>
+                    <input type="text" id="medo" name="medo" placeholder="O Pennywise quer saber..." required><br>
+                </div>
+
+
+
+            </div>
+
+            <div class="n">
+                <label for="bicicleta">Sabe andar de bicicleta estilo Silver?</label><br>
+                <select id="bicicleta" name="bicicleta" required>
+                    <option value="">Selecione</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                    <option>Mais ou menos</option>
+                </select>
+            </div>
+
+            <div class="n">
+                <label for="membro">Com qual Otário você mais se identifica?</label><br>
+                <select id="membro" name="membro" required>
+                    <option value="">Selecione</option>
+                    <option>Bill Denbrough</option>
+                    <option>Beverly Marsh</option>
+                    <option>Ben Hanscom</option>
+                    <option>Richie Tozier</option>
+                    <option>Eddie Kaspbrak</option>
+                    <option>Mike Hanlon</option>
+                    <option>Stanley Uris</option>
+                </select>
+            </div>
+            <hr>
+
+            <h1>Informações adicionais</h1>
+
+            <div class="adicional">
+
+                <div class="n">
+                    <label for="experiencia">Alguma experiência estranha na sua cidade?</label><br>
+                    <textarea id="experiencia" name="experiencia" rows="3" placeholder="Conte para o Clube..."
+                        required></textarea>
+                </div>
+
+                <div class="n">
+                    <label for="terror">Tipo de terror que mais te assusta</label><br>
+                    <select id="terror" name="terror" required>
+                        <option value="">Selecione</option>
+                        <option>Palhaços</option>
+                        <option>Sombras e figuras estranhas</option>
+                        <option>Monstros sobrenaturais</option>
+                        <option>Objetos possuídos</option>
+                        <option>Medos psicológicos</option>
+                    </select>
+                </div>
+
+                <div class="n">
+                    <label for="enfrentaria">Você enfrentaria a Coisa sozinho?</label><br>
+                    <select id="enfrentaria" name="enfrentaria" required>
+                        <option value="">Selecione</option>
+                        <option>Sim, sou corajoso</option>
+                        <option>Não, nem ferrando!</option>
+                        <option>Só com o Clube junto</option>
+                    </select>
+                </div>
+
+                <div class="n">
+                    <label for="segredos">Acredita que sua cidade esconde segredos?</label><br>
+                    <select id="segredos" name="segredos" required>
+                        <option value="">Selecione</option>
+                        <option>Sim</option>
+                        <option>Não</option>
+                        <option>Às vezes…</option>
+                    </select>
+                </div>
+
+                <div class="n">
+                    <label for="lema">Seu lema para o Clube dos Otários</label><br>
+                    <input type="text" id="lema" name="lema" placeholder="Ex: Nós não flutuamos!" required><br>
+                </div>
+                <br>
+                <div class="n">
+                    <label for="email">E-mail para contato</label><br>
+                    <input type="email" id="email" name="email" placeholder="email@exemplo.com" required><br>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <button type="submit" id="botao">Enviar</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
