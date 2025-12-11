@@ -8,8 +8,17 @@ body {
 }
 .title {
     text-align: center;
-    font-size: 10vh;
+    font-size: 13vh;
     margin-top: 5%;
+    margin-bottom: 5%;
+}
+span {
+    animation: mudacor 3s forwards;
+}
+@keyframes mudacor {
+    to {
+        color: red;
+    }
 }
 .banner {
     display: flex;
@@ -30,6 +39,8 @@ body {
     font-size: 3vh;
     text-align: justify;
     text-shadow: 2px 2px 4px black;
+    margin-bottom: 10%;
+    animation: fadeInUp 2s;
 }
 .sub {
     text-align: center;
@@ -73,6 +84,7 @@ body {
 .imagem-texto {
     display: flex;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 .imagem-texto img {

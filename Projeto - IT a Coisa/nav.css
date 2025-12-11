@@ -7,7 +7,7 @@ body {
 }
 hr {
     border: 1px solid red;
-    margin-top: -.1%;
+    margin-top: -.2%;
     position: relative;
 }
 .baloes span {
@@ -27,7 +27,7 @@ hr {
 }
 .baloes span:nth-child(3) {
     animation-duration: 8s;
-    animation-delay: 2s;
+    animation-delay: 5s;
 }
 .baloes span:nth-child(4) {
     animation-duration: 9s;
@@ -37,27 +37,6 @@ hr {
     animation-duration: 11s;
     animation-delay: 4s;
 }
-.baloes span:nth-child(6) {
-    animation-duration: 6s;
-    animation-delay: 2s;
-}
-.baloes span:nth-child(7) {
-    animation-duration: 12s;
-    animation-delay: 1s;
-}
-.baloes span:nth-child(8) {
-    animation-duration: 7.5s;
-    animation-delay: 3s;
-}
-.baloes span:nth-child(9) {
-    animation-duration: 9.5s;
-    animation-delay: 0.5s;
-}
-.baloes span:nth-child(10) {
-    animation-duration: 8.5s;
-    animation-delay: 4s;
-}
-
 @keyframes subirbalao {
     0% {
         transform: translateY(0) scale(0.9);
@@ -105,7 +84,7 @@ a img {
 
 .home {
     position: relative;
-    left: -37%;
+    left: -45%;
     transition: 0.5s ease;
 }
 .home:hover {
