@@ -106,3 +106,15 @@ span {
     width: 60%;
 }
 
+.autor {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 35%;              
+  margin-left: auto; 
+  margin-right: auto;
+  border-top: 1px solid #dadada;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-top: -2%;
+}

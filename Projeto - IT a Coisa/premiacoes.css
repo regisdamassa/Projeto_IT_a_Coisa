@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    min-height: 100vh;
+    color: white;
+    border-top: 1px solid #b10000;
+}
+
+.title {
+    text-align: center;
+    font-size: 13vh;
+    margin-top: 5%;
+}
+
+span {
+    animation: mudacor 3s forwards;
+}
+
+@keyframes mudacor {
+    to {
+        color: red;
+    }
+}
+
+.apre {
+    margin: 1vh 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    text-align: justify;
+    text-shadow: 2px 2px 4px black;
+    animation: fadeInUp 2s;
+}
+
+.conteiner {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0; 
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(177, 0, 0), -2px -2px 5px rgb(112, 32, 32);
+}
+
+table {
+    width: 100%;   /* 🔥 ocupa 100% do container */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #000;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    font-size: 20px;
+}
+
+/* hover somente nas linhas do corpo */
+tr:not(:first-child):hover {
+    background-color: #303030;
+}
+
+.tr2 {
+    background-color: #0e0e0ed3;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #cf000070;
+}
+
+.autor {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 35%;              
+  margin-left: auto; 
+  margin-right: auto;
+  border-top: 1px solid #dadada;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-top: -2%;
+}
