@@ -240,14 +240,14 @@ a img {
     transform: translateY(0);
 }
 
-.denuncia {
+.clube {
     position: relative;
 }
-.denuncia::before {
+.clube::before {
     content: "";
     transition: opacity .3s ease;
 }
-.denuncia::after {
+.clube::after {
     content: "";
     position: absolute;
     left: 100%;
@@ -255,17 +255,17 @@ a img {
     aspect-ratio: 1/1;
     width: 70vh;
     height: auto;
-    background-image: url("imagens/warning.png");
+    background-image: url("imagens/team.png");
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
     transform: translateY(5px);
     transition: .3s ease;
 }
-.denuncia:hover::before {
+.clube:hover::before {
     opacity: 0;
 }
-.denuncia:hover::after {
+.clube:hover::after {
     opacity: 1;
     transform: translateY(0);
 }

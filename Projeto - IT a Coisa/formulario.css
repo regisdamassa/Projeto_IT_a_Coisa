@@ -155,10 +155,11 @@ hr {
 }
 
 
-button {
+a {
     color: white;
     background-color: rgb(68, 68, 68);
     border: none;
+    text-decoration: none;
     border-radius: 12px;
     padding: 2vh;
     width: 40%;
@@ -170,13 +171,13 @@ button {
     transition: .4s;
 }
 
-form:valid button:hover {
+form:valid a:hover {
     cursor: pointer;
     background-color: rgb(88, 88, 88);
     transform: scale(1.03);
 }
 
-form:invalid button:hover {
+form:invalid a:hover {
     cursor: not-allowed;
     animation: tremer2 .5s ease infinite;
 }
